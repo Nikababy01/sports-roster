@@ -45,7 +45,7 @@ class App extends React.Component {
     return (
         <div className="App">
           <MyNavbar authed={authed}/>
-        <h2>Sports Roster</h2>
+        <h2 className="text-center">Sports Roster</h2>
         {loadComponent()}
       </div>
     );
