@@ -25,7 +25,7 @@ class Team extends React.Component {
 
     return (
       <div className="Team">
-        <h2 className="text-center">Team Roster</h2>
+        <h2 className="text-center">Starting Players</h2>
         <div className="d-flex flex-wrap">
           {makePlayers}
         </div>

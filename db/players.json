@@ -3,7 +3,7 @@
     "id": 1,
     "imageUrl":"https://oyster.ignimgs.com/wordpress/stg.ign.com/2018/05/michale-jordan.jpg",
     "name": "Michael Jordan",
-    "position": "Point Guard",
+    "position": "Shooting Guard",
     "uid": "FBVhsCNWx0XxssQdVpH4AjKis6t2"
 
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "imageUrl":"https://i.pinimg.com/736x/a9/6d/a7/a96da767dd7aac1827cd4d40b73149e8.jpg",
     "name": "Scottie Pippen",
-    "position": "Point Guard",
+    "position": "Small Forward",
     "uid": "FBVhsCNWx0XxssQdVpH4AjKis6t2"
 
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "imageUrl":"https://cdn.bleacherreport.net/images_root/slides/photos/000/853/518/232519_original.jpg?1302580668",
     "name": "Dennis Rodman",
-    "position": "Point Guard",
+    "position": "Power Forward",
     "uid": "FBVhsCNWx0XxssQdVpH4AjKis6t2"
 
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "imageUrl":"http://www.rantsports.com/nba/files/2015/08/4HoraceGrant-Copy.jpg",
     "name": "Horace Grant",
-    "position": "Point Guard",
+    "position": "Center Forward",
     "uid": "FBVhsCNWx0XxssQdVpH4AjKis6t2"
 
   },
@@ -44,7 +44,7 @@
     "id": 6,
     "imageUrl":"http://4.bp.blogspot.com/-VhTA_IFPy0k/U2O0AjnoXZI/AAAAAAAAXM8/17xc9CAi9R8/s400/steve+kerr+bringing+up+ball+in+Bulls+uniform.jpg",
     "name": "Steve Kerr",
-    "position": "Point Guard",
+    "position": "Shooting Guard",
     "uid": "FBVhsCNWx0XxssQdVpH4AjKis6t2"
 
   },
