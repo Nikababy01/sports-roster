@@ -6,7 +6,7 @@ import playersShape from '../../helpers/propz/playersShape';
 class Player extends React.Component {
   static propTypes = {
     player: playersShape.playersShape,
-    removePlayer: PropTypes.func.isRequired,
+    removePlayers: PropTypes.func.isRequired,
   }
 
   deletePlayerEvent = (e) => {
