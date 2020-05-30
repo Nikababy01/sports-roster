@@ -13,6 +13,16 @@ class TeamForm extends React.Component {
     playerImageUrl: '',
     playerName: '',
     playerPosition: '',
+    isEditing: false,
+  }
+
+  componentDidMount() {
+    const { player } = this.props;
+    if (player.name) {
+      this.setState({
+        playerName: player.name, playerImageUrl: player.imageUrl, playerPosition: player.position, isEditing: true,
+      });
+    }
   }
 
   savePlayer = (e) => {
@@ -27,6 +37,19 @@ class TeamForm extends React.Component {
       uid: authData.getUid(),
     };
     saveNewPlayer(newPlayer);
+  }
+
+  updatePlayer= (e) => {
+    e.preventDefault();
+    const { player, putPlayer } = this.props;
+    const { playerImageUrl, playerName, playerPosition } = this.state;
+    const updatedPlayer = {
+      imageUrl: playerImageUrl,
+      name: playerName,
+      position: playerPosition,
+      uid: authData.getUid(),
+    };
+    putPlayer(player.id, updatedPlayer);
   }
 
   nameChange = (e) => {
@@ -45,7 +68,9 @@ class TeamForm extends React.Component {
   }
 
   render() {
-    const { playerImageUrl, playerName, playerPosition } = this.state;
+    const {
+      playerImageUrl, playerName, playerPosition, isEditing,
+    } = this.state;
 
     return (
       <div className="TeamForm">
@@ -83,7 +108,10 @@ class TeamForm extends React.Component {
              onChange={this.imageUrlChange}
              />
         </div>
-        <button className="btn btn-dark" onClick={this.savePlayer}>Save Player</button>
+        { isEditing
+          ? <button className="btn btn-dark" onClick={this.updatePlayer}>Update Player</button>
+          : <button className="btn btn-dark" onClick={this.savePlayer}>Save Player</button>
+      }
         </form>
       </div>
     );
